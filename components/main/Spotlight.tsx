@@ -2,7 +2,11 @@
 
 import React, { useState } from 'react';
 
-const Spotlight: React.FC = () => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const Spotlight: React.FC<Props> = ({ children }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (event: React.MouseEvent) => {
@@ -18,11 +22,13 @@ const Spotlight: React.FC = () => {
       className='h-screen w-full overflow-hidden'
     >
       <div
-        className='pointer-events-none absolute inset-0 transition duration-300'
+        className=' absolute inset-0 transition duration-300'
         style={{
           background: `radial-gradient(600px at ${position.x}px ${position.y}px, #111827, transparent 80%)`, // #111827 is the bg-gray-900 color
         }}
-      ></div>
+      >
+        {children}
+      </div>
     </div>
   );
 };

@@ -1,11 +1,13 @@
 import Spotlight from '@/components/main/Spotlight';
+import Header from '@/components/main/Header';
 
 export default function Home() {
   return (
     <>
       <div className=''>
-        <Spotlight />
-        <div className='text-gray-50'>Hello World!</div>
+        <Spotlight>
+          <Header></Header>
+        </Spotlight>
       </div>
     </>
   );
