@@ -1,9 +1,12 @@
-import Image from 'next/image';
+import Spotlight from '@/components/main/Spotlight';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div>Hello World!</div>
-    </main>
+    <>
+      <div className=''>
+        <Spotlight />
+        <div className='text-gray-50'>Hello World!</div>
+      </div>
+    </>
   );
 }
