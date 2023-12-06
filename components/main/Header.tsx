@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
         objectFit='contain'
         className='rounded-full'
       ></Image>
-      <h1 className='text-4xl font-bold text-gray-200 sm:text-5xl'>
+      <h1 className='mt-8 text-4xl font-bold text-gray-200 sm:text-5xl'>
         <a href='/'>Aaron Myburgh</a>
       </h1>
       <h2 className='mt-3 text-lg font-bold [text-wrap:balance]'>
@@ -32,6 +33,25 @@ const Header: React.FC = () => {
       <p className='mt-4 max-w-xs leading-normal'>
         I build exceptional and accessible digital experiences for the web.
       </p>
+      <nav className='hidden lg:block' aria-label='In-page jump links'>
+        <ul className='mt-16 w-max'>
+          {['about', 'experience', 'projects'].map((item) => (
+            <li key={item}>
+              <Link
+                className='active group flex items-center py-3'
+                href={`#${item}`}
+              >
+                <span className='nav-indicator group-delay-1000 mr-4 group-hover:text-gray-200 group-hover:opacity-0 group-focus-visible:w-4 group-focus-visible:text-gray-200 motion-reduce:transition-none'>
+                  {'//'}
+                </span>
+                <span className='nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-gray-200 group-focus-visible:text-gray-200'>
+                  {item}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 };
