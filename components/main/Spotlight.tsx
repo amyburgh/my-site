@@ -21,9 +21,9 @@ const Spotlight: React.FC<Props> = ({ children }) => {
     }
   };
 
-  useEffect(() => {
-    document.body.style.cursor = 'none'; // Hide the default cursor
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.cursor = 'none'; // Hide the default cursor
+  // }, []);
 
   return (
     <div
@@ -38,7 +38,7 @@ const Spotlight: React.FC<Props> = ({ children }) => {
       >
         {children}
       </div>
-      <div // Dot cursor
+      {/* <div // Dot cursor
         ref={cursorRef}
         className='pointer-events-none absolute h-2 w-2 rounded-full bg-gray-200'
         style={{
@@ -54,7 +54,7 @@ const Spotlight: React.FC<Props> = ({ children }) => {
           background: 'transparent',
           boxShadow: '0 0 10px #111827',
         }}
-      />
+      /> */}
     </div>
   );
 };
