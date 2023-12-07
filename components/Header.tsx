@@ -3,21 +3,52 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ModeToggle } from './ModeToggle';
+import { useTheme } from 'next-themes';
 
 const Header: React.FC = () => {
+  const [mounted, setMounted] = React.useState(false);
+  const { theme, setTheme } = useTheme();
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24'>
-      {/* Your code here */}
-      <Image
-        src='/dark-profile.png'
-        alt='Pixar style avatar of Aaron Myburgh in a dark theme'
-        width={400}
-        height={400}
-        // fill={true}
-        objectFit='contain'
-        className='rounded-full'
-      ></Image>
+      <div
+        className='transform transition duration-500 ease-in-out'
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {theme === 'dark' ? (
+          <Image
+            src={isHovered ? '/dark-profile-glitch.webp' : '/dark-profile.png'}
+            alt='Pixar style avatar of Aaron Myburgh in a dark theme'
+            width={400}
+            height={400}
+            // objectFit='contain'
+            className='rounded-full'
+          />
+        ) : (
+          <Image
+            src={'/light-profile2.png'}
+            alt='Pixar style avatar of Aaron Myburgh in a light theme'
+            width={400}
+            height={400}
+            // objectFit='contain'
+            className='rounded-full'
+          />
+        )}
+      </div>
       <h1 className='mt-8 text-4xl font-bold text-gray-200 sm:text-5xl'>
         <a href='/'>Aaron Myburgh</a>
       </h1>

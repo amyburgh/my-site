@@ -7,6 +7,12 @@
 }
 
 @layer base {
+  body {
+    @apply bg-gray-100 text-gray-400 transition-all duration-300 ease-in dark:bg-gray-950;
+  }
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
