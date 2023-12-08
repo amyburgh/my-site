@@ -3,7 +3,11 @@ import Personality from './Personality';
 
 const About: React.FC = () => {
   return (
-    <div>
+    <section
+      id='about'
+      className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
+      aria-label='about me'
+    >
       <h1 className='mb-4 text-gray-200'>{'// About me'}</h1>
       <p className='mb-4'>
         Hey there, I&apos;m Aaron an adaptable Software Engineer with a dash of
@@ -33,7 +37,7 @@ const About: React.FC = () => {
         Summer sun{"'"}s out. Life{"'"}s too short not to add a bit of{' '}
         <Personality /> to the code, right?
       </p>
-    </div>
+    </section>
   );
 };
 
