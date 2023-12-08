@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         </h1>
         <h2 className='mt-3 text-lg font-bold [text-wrap:balance]'>
           I`m a{' '}
-          <span className='inline-flex h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] flex-col overflow-hidden text-indigo-500'>
+          <span className='inline-flex h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] flex-col overflow-hidden text-sky-400'>
             <ul className='animate-text-slide-2 block text-left leading-tight [&_li]:block'>
               <li>Software Engineer</li>
               <li>Mechanical Engineer</li>
@@ -23,7 +23,8 @@ const Header: React.FC = () => {
           </span>
         </h2>
         <p className='mt-4 max-w-xs leading-normal'>
-          I build exceptional and accessible digital experiences for the web.
+          I engineer safe and robust software solutions using the latest
+          technologies.
         </p>
         <Nav />
       </header>

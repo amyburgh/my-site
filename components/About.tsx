@@ -1,9 +1,10 @@
 import React from 'react';
+import Personality from './Personality';
 
 const About: React.FC = () => {
   return (
     <div>
-      <h1 className='text-gray-200'>{'// About me'}</h1>
+      <h1 className='mb-4 text-gray-200'>{'// About me'}</h1>
       <p className='mb-4'>
         Hey there, I&apos;m Aaron an adaptable Software Engineer with a dash of
         Mechanical Engineering mojo.
@@ -21,7 +22,7 @@ const About: React.FC = () => {
         Away from the keyboard, you{"'"}ll catch me soaking up family vibes,
         diving into historical fiction or biographies (seriously, check out
         <a
-          className='font-medium text-gray-200 hover:text-teal-300 focus-visible:text-teal-300'
+          className='font-medium text-gray-200 hover:text-sky-300 focus-visible:text-sky-300'
           href='https://www.goodreads.com/book/show/343.Perfume'
           target='_blank'
           rel='noreferrer'
@@ -29,8 +30,8 @@ const About: React.FC = () => {
           {' "Perfume: The Story of a Murderer" '}
         </a>
         ), or making a splash in open water swimming competitions when the
-        Summer sun{"'"}s out. Life{"'"}s too short not to add a bit of
-        personality to the code, right?
+        Summer sun{"'"}s out. Life{"'"}s too short not to add a bit of{' '}
+        <Personality /> to the code, right?
       </p>
     </div>
   );
