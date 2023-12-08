@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './About';
+import Card from './Card';
 
 const Main: React.FC = () => {
   return (
@@ -14,6 +15,8 @@ const Main: React.FC = () => {
       >
         <About />
       </section>
+      hellow
+      <Card />
     </main>
   );
 };

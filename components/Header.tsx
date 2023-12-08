@@ -2,7 +2,7 @@
 
 import React from 'react';
 import HeaderImage from '@/components/HeaderImage';
-import Nav from './nav';
+import Nav from './Nav';
 
 const Header: React.FC = () => {
   return (
