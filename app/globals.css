@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-cursor {
-  cursor: none, auto;
-}
-
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-400 transition-all duration-300 ease-in dark:bg-gray-950;
+    @apply bg-gray-200 text-gray-400 transition-all duration-300 ease-in dark:bg-gray-950;
   }
 }
 

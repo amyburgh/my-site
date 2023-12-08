@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import Spotlight from '@/components/Spotlight';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,8 +28,10 @@ export default function RootLayout({
           defaultTheme='dark'
           enableSystem={false}
         >
-          <ThemeToggle />
-          {children}
+          <Spotlight>
+            <ThemeToggle />
+            {children}
+          </Spotlight>
         </ThemeProvider>
       </body>
     </html>
