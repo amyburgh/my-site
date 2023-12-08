@@ -1,0 +1,21 @@
+      <h1>About</h1>
+        I am Aaron, an adaptable and self-motivated software engineer with a
+        strong foundation in both Mechanical and Software Engineering. I am
+        currently transitioning to Software Engineering from a career in
+        Commercial Property Management.
+        
+        My past experiences would be a valuable asset to any team seeking a
+        problem solver with a diverse skill set. My background in mechanical
+        engineering has provided me with a strong understanding of how systems
+        work and the ability to think critically and solve problems creatively.
+        My experience in commercial property management has further honed my
+        skills in communication, teamwork, and project management. I am
+        passionate about technology and I am constantly learning new things. I
+        am also interested in cybersecurity and have completed coursework in
+        ethical hacking and digital forensics.
+        
+        When I step away from the computer, you can find me hanging out with my
+        family, getting lost in a good historical fiction or biography (highly
+        recommend "Perfume: The Story of a Murderer" for something unique), 
+        or in the summer tackling the open water for a
+        both fun and competetive swimming.

@@ -3,28 +3,23 @@ import React from 'react';
 const About: React.FC = () => {
   return (
     <div>
-      <h1>About</h1>
+      <h1 className='text-gray-200'>{'// About me'}</h1>
       <p className='mb-4'>
-        I am Aaron, an adaptable and self-motivated software engineer with a
-        strong foundation in both Mechanical and Software Engineering. I am
-        currently transitioning to Software Engineering from a career in
-        Commercial Property Management.
+        Hey there, I&apos;m Aaron an adaptable Software Engineer with a dash of
+        Mechanical Engineering mojo.
+      </p>
+      <p className='mb-4'>
+        My mechanical engineering background equips me with a keen understanding
+        of how systems work and solving problems with creative, outside-the-box
+        thinking. Thanks to a stint in commercial property management, I{"'"}ve
+        mastered the art of smooth communication, teamwork, and project
+        juggling. Passionate about technology, I thrive on continuous learning,
+        exploring areas like cybersecurity, I{"'"}ve dabbled in ethical hacking
+        and digital forensics for that extra thrill.
       </p>
       <p>
-        My past experiences would be a valuable asset to any team seeking a
-        problem solver with a diverse skill set. My background in mechanical
-        engineering has provided me with a strong understanding of how systems
-        work and the ability to think critically and solve problems creatively.
-        My experience in commercial property management has further honed my
-        skills in communication, teamwork, and project management. I am
-        passionate about technology and I am constantly learning new things. I
-        am also interested in cybersecurity and have completed coursework in
-        ethical hacking and digital forensics.
-      </p>
-      <p>
-        When I step away from the computer, you can find me hanging out with my
-        family, getting lost in a good historical fiction or biography (highly
-        recommend
+        Away from the keyboard, you{"'"}ll catch me soaking up family vibes,
+        diving into historical fiction or biographies (seriously, check out
         <a
           className='font-medium text-gray-200 hover:text-teal-300 focus-visible:text-teal-300'
           href='https://www.goodreads.com/book/show/343.Perfume'
@@ -33,8 +28,9 @@ const About: React.FC = () => {
         >
           {' "Perfume: The Story of a Murderer" '}
         </a>
-        for something unique), or in the summer tackling the open water for a
-        both fun and competetive swimming.
+        ), or making a splash in open water swimming competitions when the
+        Summer sun{"'"}s out. Life{"'"}s too short not to add a bit of
+        personality to the code, right?
       </p>
     </div>
   );
