@@ -5,10 +5,7 @@ import Projects from './Projects';
 
 const Main: React.FC = () => {
   return (
-    <main
-      id='content'
-      // className='py-24 lg:flex lg:max-h-screen lg:w-40 lg:flex-col'
-    >
+    <main id='content' className=''>
       <About />
       <Experience />
       <Projects />
@@ -16,4 +13,4 @@ const Main: React.FC = () => {
   );
 };
 
-export default About;
+export default Main;

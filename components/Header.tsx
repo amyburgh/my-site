@@ -1,38 +1,40 @@
-// 'use client';
+'use client';
 
 import React from 'react';
-import HeaderImage from '@/components/HeaderImage';
-import Nav from './Nav';
+import { motion } from 'framer-motion';
+import { links } from '@/lib/data';
+import Link from 'next/link';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Header: React.FC = () => {
   return (
-    <>
-      <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between'>
-        <HeaderImage />
-        <h1 className='mt-8 text-4xl font-bold text-gray-200 sm:text-5xl'>
-          <a href='/'>Aaron Myburgh</a>
-        </h1>
-        <h2 className='mt-3 text-lg font-bold [text-wrap:balance]'>
-          I`m a{' '}
-          <span className='inline-flex h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] flex-col overflow-hidden text-sky-400'>
-            <ul className='animate-text-slide-2 block text-left leading-tight [&_li]:block'>
-              <li>Software Engineer</li>
-              <li>Mechanical Engineer</li>
-              <li aria-hidden='true'>Software Engineer</li>
-            </ul>
-          </span>
-        </h2>
-        <p className='mt-4 max-w-xs leading-normal'>
-          I engineer safe and robust software solutions using the latest
-          technologies.
-        </p>
-        <Nav />
-      </header>
-    </>
+    <header>
+      {/* <motion.div
+        className='fixed left-1/2 top-0 h-16 w-full rounded-none border border-white 
+        border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/20 backdrop-blur-sm sm:top-6 sm:h-12 
+        sm:w-9 sm:rounded-xl lg:w-fit lg:px-8'
+        initial={{ y: -100, x: '-50%', opacity: 0 }}
+        animate={{ y: 0, x: '-50%', opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+      >
+        <nav className='flex h-full items-center justify-center'>
+          <ul className='flex items-center justify-center space-x-6'>
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link
+                  className='text-gray-900 hover:text-gray-300 dark:text-gray-50 dark:hover:text-gray-200'
+                  href={link.href}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </motion.div> */}
+      <ThemeToggle />
+    </header>
   );
 };
 
 export default Header;
-
-// Inspiration: For the text carousel
-// https://cruip.com/creating-a-sliding-text-animation-with-tailwind-css/

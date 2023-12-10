@@ -13,7 +13,7 @@ const About: React.FC = () => {
         Hey there, I&apos;m Aaron an adaptable Software Engineer with a dash of
         Mechanical Engineering mojo.
       </p>
-      <p className='mb-4'>
+      {/* <p className='mb-4'>
         My mechanical engineering background equips me with a keen understanding
         of how systems work and solving problems with creative, outside-the-box
         thinking. Thanks to a stint in commercial property management, I{"'"}ve
@@ -21,7 +21,7 @@ const About: React.FC = () => {
         juggling. Passionate about technology, I thrive on continuous learning,
         exploring areas like cybersecurity, I{"'"}ve dabbled in ethical hacking
         and digital forensics for that extra thrill.
-      </p>
+      </p> */}
       <p>
         Away from the keyboard, you{"'"}ll catch me soaking up family vibes,
         diving into historical fiction or biographies (seriously, check out

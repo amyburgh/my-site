@@ -10,6 +10,10 @@ interface Props {
 const Spotlight: React.FC<Props> = ({ children }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const { theme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
 
   const handleMouseMove = (event: React.MouseEvent) => {
     setPosition({

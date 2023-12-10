@@ -1,16 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-// import { useTheme } from 'next-themes';
 
-const HeaderImage: React.FC = () => {
-  // const [mounted, setMounted] = React.useState(false);
-  // const { theme, setTheme } = useTheme();
-  const [isHovered, setIsHovered] = React.useState(false);
-
-  // React.useEffect(() => setMounted(true), []);
-  // if (!mounted) return null;
+const ProfileImage: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -29,6 +23,7 @@ const HeaderImage: React.FC = () => {
       <Image
         src={isHovered ? '/dark-profile-glitch.webp' : '/dark-profile.png'}
         alt='Pixar style avatar of Aaron Myburgh'
+        priority={true}
         width={400}
         height={400}
         className='rounded-full'
@@ -37,4 +32,4 @@ const HeaderImage: React.FC = () => {
   );
 };
 
-export default HeaderImage;
+export default ProfileImage;
