@@ -27,7 +27,7 @@ const socials = [
 
 const Socials: React.FC = () => {
   return (
-    <div>
+    <div className=''>
       <ul className='ml-1 mt-8 flex items-center' aria-label='Social media'>
         <li className='mr-5 text-xs'>
           <a

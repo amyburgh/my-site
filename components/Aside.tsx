@@ -1,6 +1,5 @@
 import React from 'react';
 import ProfileImage from './ProfileImage';
-import Nav from './Nav';
 import Socials from './Socials';
 import { Button } from '@/components/ui/button';
 import { DownloadIcon } from '@radix-ui/react-icons';
@@ -18,22 +17,15 @@ const Aside = () => {
           <span className='inline-block bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent'>
             Software Engineer
           </span>
-          {/* <span className='inline-flex h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] flex-col overflow-hidden text-sky-400'>
-          <ul className='block animate-text-slide-2 text-left leading-tight [&_li]:block'>
-            <li>Software Engineer</li>
-            <li>Mechanical Engineer</li>
-            <li aria-hidden='true'>Software Engineer</li>
-          </ul>
-        </span> */}
         </h2>
         <p className='mt-4 max-w-xs leading-normal'>
           I engineer safe and robust software solutions using the latest
           technologies.
         </p>
-        <Button className='to my-4 w-fit bg-sky-500 px-6 text-gray-200 hover:bg-gradient-to-l hover:from-violet-500'>
+        <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 hover:bg-gradient-to-l hover:from-violet-500'>
+          {/* <Button className='my-4 w-fit border border-sky-500 bg-gray-200/10 px-6 text-gray-200 hover:bg-sky-500 hover:bg-gradient-to-l hover:from-violet-400'> */}
           <DownloadIcon className='mr-2 h-4 w-4' /> Resume
         </Button>
-        <Nav />
         <Socials />
       </aside>
     </>
