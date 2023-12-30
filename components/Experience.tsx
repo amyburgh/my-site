@@ -1,4 +1,24 @@
+'use client';
 import React from 'react';
+import { Link2Icon } from '@radix-ui/react-icons';
+import { Separator } from '@/components/ui/seperator';
+
+const data = [
+  {
+    company: '',
+    position: 'Commercial Propery Manager',
+    date: '2020 - PRESENT',
+    description:
+      'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
+  },
+  {
+    company: 'NMU Formula Student Racing Team',
+    position: 'Mechanical Design Engineer',
+    date: 'JUN. 2013 - NOV. 2014',
+    description:
+      'Designed and implemented composite components that achieved a weight reduction of up to 30% through the integration of varied tread orientations and the layering of carbon fiber, enhanced by vacuum pressure curing. Delivered training to onboard new teammembers.',
+  },
+];
 
 const Experience: React.FC = () => {
   return (
@@ -7,16 +27,35 @@ const Experience: React.FC = () => {
       className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
       aria-label='experience'
     >
-      <div className='sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0'>
-        <h2 className='text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only'>
-          Experience
-        </h2>
-      </div>
-      <div>
-        <ol className='group/list'>
-          <li className='mb-12'></li>
-        </ol>
-      </div>
+      <h3 className='not-prose mb-4 flex whitespace-pre-wrap text-xl font-semibold text-gray-200'>
+        <a
+          className='group relative border-none lg:-ml-2 lg:pl-2'
+          href='#experience'
+        >
+          <div className='absolute -ml-8 hidden items-center border-0 opacity-0 group-hover:opacity-100 group-focus:opacity-100 lg:flex'>
+            <div className='flex h-6 w-6 items-center justify-center rounded-md text-gray-400 shadow-sm ring-1 ring-gray-900/5 hover:text-gray-700 hover:shadow hover:ring-gray-900/10 dark:bg-gray-700 dark:text-gray-300 dark:shadow-none dark:ring-0'>
+              <Link2Icon />
+            </div>
+          </div>
+          EXPERIENCE
+        </a>
+      </h3>
+
+      <p className='mb-4'>
+        {data.map((job) => (
+          <div className='mb-4 flex gap-4' key={job.company}>
+            <div>
+              <p className='w-max text-sm text-gray-400'>{job.date}</p>
+            </div>
+            <div>
+              <h4 className='text-lg font-semibold text-gray-200'>
+                {job.position} @ {job.company}
+              </h4>
+              <p className='text-sm text-gray-400'>{job.description}</p>
+            </div>
+          </div>
+        ))}
+      </p>
     </section>
   );
 };

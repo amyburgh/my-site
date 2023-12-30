@@ -2,6 +2,9 @@ import React from 'react';
 import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
+import Contact from './Contact';
+
+import { scroll } from 'framer-motion';
 
 const Main: React.FC = () => {
   return (
@@ -9,6 +12,7 @@ const Main: React.FC = () => {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </main>
   );
 };

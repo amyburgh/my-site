@@ -18,12 +18,14 @@ const Hero = () => {
         </span>
       </h2>
       <p className='mt-4 max-w-xs leading-normal'>
-        I engineer safe and robust software solutions using the latest
-        technologies.
+        I engineer safe and robust web solutions using the latest technologies.
       </p>
-      <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 hover:bg-gradient-to-l hover:from-violet-500'>
-        <DownloadIcon className='mr-2 h-4 w-4' /> Resume
-      </Button>
+      {/* TODO: Add resume */}
+      <a href='./Resume_placeholder.pdf' download>
+        <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 hover:bg-gradient-to-l hover:from-violet-500'>
+          <DownloadIcon className='mr-2 h-4 w-4' /> Resume
+        </Button>
+      </a>
     </div>
   );
 };

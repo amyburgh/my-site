@@ -40,7 +40,7 @@ const About: React.FC = () => {
         Away from the keyboard, you{"'"}ll catch me soaking up family vibes,
         diving into historical fiction or biographies (seriously, check out
         <a
-          className='font-medium text-gray-200 hover:text-sky-300 focus-visible:text-sky-300'
+          className='font-medium text-gray-200 hover:text-sky-400 focus-visible:text-sky-400'
           href='https://www.goodreads.com/book/show/343.Perfume'
           target='_blank'
           rel='noreferrer'
