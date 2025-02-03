@@ -1,7 +1,38 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { Link2Icon } from '@radix-ui/react-icons';
+import ProjectItem from './ui/ProjectItem';
 
 const Projects: React.FC = () => {
+  const [projects] = useState([
+    {
+      id: 1,
+      name: 'Message Board',
+      description:
+        'This is a simple message board application where users can view and add new messages',
+      html_url: 'https://github.com/amyburgh/message-board',
+      imageUrl: '/projects/message-board.png',
+      technologies: ['ExpressJS'],
+    },
+    {
+      id: 2,
+      name: 'Memory Match',
+      description:
+        'Match the same pair of cards, test & improve your memory with this game',
+      html_url: 'https://github.com/amyburgh/memory-match',
+      imageUrl: '/projects/memory-match.jpg',
+      technologies: ['React', 'Node.js', 'TailwindCSS'],
+    },
+    {
+      id: 3,
+      name: 'Sign-Up Form',
+      description: 'A simple sign-up form with validation',
+      html_url: 'https://github.com/amyburgh/sign-up-form',
+      imageUrl: '/projects/sign-up-form.jpg',
+      technologies: ['three.js', 'Node.js'],
+    },
+  ]);
+
   return (
     <section
       id='projects'
@@ -22,7 +53,20 @@ const Projects: React.FC = () => {
         </a>
       </h3>
 
-      <p className='mb-4'></p>
+      <div>
+        <ul className='group/list'>
+          {projects.map((project) => (
+            <ProjectItem
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              html_url={project.html_url}
+              imageUrl={project.imageUrl}
+              technologies={project.technologies}
+            />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

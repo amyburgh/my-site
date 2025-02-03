@@ -31,7 +31,7 @@ const Contact = () => {
         rel='noreferrer noopener'
         aria-label='LinkedIn (opens in a new tab)'
       >
-        <Alert className='border-green-400 bg-green-400/10 text-green-400 hover:border-green-300 hover:text-green-300'>
+        <Alert className='border-green-400 bg-green-400/10 text-green-400'>
           <ChatBubbleIcon className='h-4 w-4' />
           <AlertTitle>Get in touch!</AlertTitle>
           <AlertDescription>

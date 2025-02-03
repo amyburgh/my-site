@@ -5,9 +5,9 @@ import { Separator } from '@/components/ui/seperator';
 
 const data = [
   {
-    company: '',
+    company: 'Noosa Trust',
     position: 'Commercial Propery Manager',
-    date: '2020 - PRESENT',
+    date: 'JAN. 2020 - DEC. 2023',
     description:
       'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
   },
@@ -37,15 +37,19 @@ const Experience: React.FC = () => {
               <Link2Icon />
             </div>
           </div>
-          EXPERIENCE
+          Experience
         </a>
       </h3>
-
       <p className='mb-4'>
         {data.map((job) => (
-          <div className='mb-4 flex gap-4' key={job.company}>
+          <div
+            className='mb-4 flex flex-col gap-4 lg:flex-row'
+            key={job.company}
+          >
             <div>
-              <p className='w-max text-sm text-gray-400'>{job.date}</p>
+              <p className='z-10 mb-2 mt-1 w-max text-xs font-semibold uppercase tracking-wide text-gray-500 sm:col-span-2'>
+                {job.date}
+              </p>
             </div>
             <div>
               <h4 className='text-lg font-semibold text-gray-200'>

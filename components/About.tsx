@@ -24,32 +24,17 @@ const About: React.FC = () => {
       </h3>
 
       <p className='mb-4'>
-        Hey there, I&apos;m Aaron an adaptable Software Engineer with a dash of
-        Mechanical Engineering mojo.
+        Hey, I&apos;m Aaron an adaptable{' '}
+        <span className='font-medium text-gray-200'>Software Engineer </span>
+        that studied Mechanical Engineering in South Africa. My skillset blends technical
+        expertise with an understanding of physical systems, resulting in a
+        unique approach to problem-solving.
       </p>
-      {/* <p className='mb-4'>
-        My mechanical engineering background equips me with a keen understanding
-        of how systems work and solving problems with creative, outside-the-box
-        thinking. Thanks to a stint in commercial property management, I{"'"}ve
-        mastered the art of smooth communication, teamwork, and project
-        juggling. Passionate about technology, I thrive on continuous learning,
-        exploring areas like cybersecurity, I{"'"}ve dabbled in ethical hacking
-        and digital forensics for that extra thrill.
-      </p> */}
       <p>
-        Away from the keyboard, you{"'"}ll catch me soaking up family vibes,
-        diving into historical fiction or biographies (seriously, check out
-        <a
-          className='font-medium text-gray-200 hover:text-sky-400 focus-visible:text-sky-400'
-          href='https://www.goodreads.com/book/show/343.Perfume'
-          target='_blank'
-          rel='noreferrer'
-        >
-          {' "Perfume: The Story of a Murderer" '}
-        </a>
-        ), or making a splash in open water swimming competitions when the
-        Summer sun{"'"}s out. Life{"'"}s too short not to add a bit of{' '}
-        <Personality /> to the code, right?
+        Beyond coding, I spend my time with family,
+        reading historical fiction and biographies, and challenging myself through some sort of outdoor activity. I
+        believe a well-rounded <Personality /> fosters creativity and ultimately
+        contributes to more impactful work.
       </p>
     </section>
   );
