@@ -26,15 +26,15 @@ const About: React.FC = () => {
       <p className='mb-4'>
         Hey, I&apos;m Aaron an adaptable{' '}
         <span className='font-medium text-gray-200'>Software Engineer </span>
-        that studied Mechanical Engineering in South Africa. My skillset blends technical
-        expertise with an understanding of physical systems, resulting in a
-        unique approach to problem-solving.
+        that studied Mechanical Engineering in South Africa. My skillset blends
+        technical expertise with an understanding of physical systems, resulting
+        in an unique approach to problem-solving.
       </p>
       <p>
-        Beyond coding, I spend my time with family,
-        reading historical fiction and biographies, and challenging myself through some sort of outdoor activity. I
-        believe a well-rounded <Personality /> fosters creativity and ultimately
-        contributes to more impactful work.
+        Beyond coding, I spend my time with family, reading historical fiction
+        and biographies, and challenging myself through some sort of outdoor
+        activity. I believe a well-rounded <Personality /> fosters creativity
+        and ultimately contributes to more impactful work.
       </p>
     </section>
   );

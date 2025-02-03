@@ -18,15 +18,14 @@ const useHash = () => {
   return hash;
 };
 
-// export default useHash;
-
 const Nav: React.FC = () => {
   const hash = useHash();
-  // console.log(hash);
+  const navItems = ['about', 'experience', 'contact'];
+
   return (
     <nav className='' aria-label='In-page jump links'>
       <ul className='w-max border-l border-gray-600 px-4'>
-        {['about', 'experience', 'projects', 'contact'].map((item) => (
+        {navItems.map((item) => (
           <li key={item} className='relative'>
             <Link href={`#${item}`} className={`group flex items-center py-3`}>
               <div

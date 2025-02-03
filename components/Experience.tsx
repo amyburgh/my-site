@@ -12,6 +12,13 @@ const data = [
       'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
   },
   {
+    company: '42 Silicon Valley',
+    position: 'Software Engineer',
+    date: 'JAN. 2019 - DEC. 2019',
+    description:
+      'Developed and maintained software applications, collaborating with cross-functional teams to identify and address technical issues. Utilized Agile methodologies to deliver high-quality software solutions, contributing to the successful completion of projects.',
+  },
+  {
     company: 'NMU Formula Student Racing Team',
     position: 'Mechanical Design Engineer',
     date: 'JUN. 2013 - NOV. 2014',

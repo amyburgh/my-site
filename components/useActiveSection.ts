@@ -14,7 +14,7 @@ const useActiveSection = (sectionIds: string[]) => {
 
     const observer = new IntersectionObserver(handleIntersect, {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '-50% 0px -50% 0px', // Adjust this value as needed
       threshold: 0, // Adjust this value as needed
     });
 

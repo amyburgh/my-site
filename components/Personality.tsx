@@ -1,51 +1,28 @@
 import React from 'react';
 
 const Mindset = () => {
+  const characters = [
+    { char: 'M', delay: 50, color: 'text-red-400' },
+    { char: 'i', delay: 75, color: 'text-orange-400' },
+    { char: 'n', delay: 100, color: 'text-yellow-400' },
+    { char: 'd', delay: 125, color: 'text-lime-400' },
+    { char: 's', delay: 150, color: 'text-green-400' },
+    { char: 'e', delay: 175, color: 'text-teal-400' },
+    { char: 't', delay: 200, color: 'text-cyan-400' },
+  ];
+
   return (
     <span className='group/dazzle relative inline-flex lg:font-medium lg:text-gray-200'>
       <span className='sr-only'>Mindset</span>
-      <span
-        className='transition delay-[50ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-red-400'
-        aria-hidden='true'
-      >
-        M
-      </span>
-      <span
-        className='transition delay-[75ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-orange-400'
-        aria-hidden='true'
-      >
-        i
-      </span>
-      <span
-        className='transition delay-[100ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-yellow-400'
-        aria-hidden='true'
-      >
-        n
-      </span>
-      <span
-        className='transition delay-[125ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-lime-400'
-        aria-hidden='true'
-      >
-        d
-      </span>
-      <span
-        className='transition delay-[150ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-green-400'
-        aria-hidden='true'
-      >
-        s
-      </span>
-      <span
-        className='transition delay-[175ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-teal-400'
-        aria-hidden='true'
-      >
-        e
-      </span>
-      <span
-        className='transition delay-[200ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:text-cyan-400'
-        aria-hidden='true'
-      >
-        t
-      </span>
+      {characters.map(({ char, delay, color }) => (
+        <span
+          key={char}
+          className={`transition delay-[${delay}ms] duration-75 group-hover/dazzle:-translate-y-px group-hover/dazzle:${color}`}
+          aria-hidden='true'
+        >
+          {char}
+        </span>
+      ))}
     </span>
   );
 };

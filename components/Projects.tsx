@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Link2Icon } from '@radix-ui/react-icons';
-import ProjectItem from './ui/ProjectItem';
+import ProjectItem from './ProjectItem';
 
 const Projects: React.FC = () => {
   const [projects] = useState([

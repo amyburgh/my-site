@@ -1,50 +1,27 @@
-import {
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from '@radix-ui/react-icons';
 import React from 'react';
+import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { LinkedInLogoIcon } from '@radix-ui/react-icons';
+import SocialLink from './SocialLink';
 
 const Socials: React.FC = () => {
   return (
     <div className=''>
       <ul className='ml-1 mt-8 flex items-center' aria-label='Social media'>
-        <li className='mr-5 text-xs'>
-          <a
-            className='block hover:text-slate-200'
-            href='https://github.com/amyburgh'
-            target='_blank'
-            rel='noreferrer noopener'
-            aria-label='GitHub (opens in a new tab)'
-          >
-            <span className='sr-only'>GitHub</span>
-            <GitHubLogoIcon className='h-6 w-6' aria-hidden='true' />
-          </a>
-        </li>
-        <li className='mr-5 text-xs'>
-          <a
-            className='block hover:text-slate-200'
-            href='https://twitter.com/aaronmyburgh'
-            target='_blank'
-            rel='noreferrer noopener'
-            aria-label='Twitter (opens in a new tab)'
-          >
-            <span className='sr-only'>Twitter</span>
-            <TwitterLogoIcon className='h-6 w-6' aria-hidden='true' />
-          </a>
-        </li>
-        <li className='mr-5 text-xs'>
-          <a
-            className='block hover:text-slate-200'
-            href='https://www.linkedin.com/in/aaronmyburgh/'
-            target='_blank'
-            rel='noreferrer noopener'
-            aria-label='LinkedIn (opens in a new tab)'
-          >
-            <span className='sr-only'>LinkedIn</span>
-            <LinkedInLogoIcon className='h-6 w-6' aria-hidden='true' />
-          </a>
-        </li>
+        <SocialLink
+          href='https://github.com/amyburgh'
+          ariaLabel='GitHub (opens in a new tab)'
+          icon={<GitHubLogoIcon className='h-6 w-6' aria-hidden='true' />}
+        />
+        <SocialLink
+          href='https://twitter.com/aaronmyburgh'
+          ariaLabel='Twitter (opens in a new tab)'
+          icon={<TwitterLogoIcon className='h-6 w-6' aria-hidden='true' />}
+        />
+        <SocialLink
+          href='https://www.linkedin.com/in/aaronmyburgh/'
+          ariaLabel='LinkedIn (opens in a new tab)'
+          icon={<LinkedInLogoIcon className='h-6 w-6' aria-hidden='true' />}
+        />
       </ul>
     </div>
   );

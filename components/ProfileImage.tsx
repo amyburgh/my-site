@@ -1,18 +1,33 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const ProfileImage: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showGlitch, setShowGlitch] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
+    setShowGlitch(true);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (isHovered) {
+      timer = setTimeout(() => {
+        setShowGlitch(false);
+      }, 100);
+    } else {
+      setShowGlitch(false);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isHovered]);
 
   return (
     <div
@@ -21,7 +36,7 @@ const ProfileImage: React.FC = () => {
       onMouseLeave={handleMouseLeave}
     >
       <Image
-        src={isHovered ? '/dark-profile-glitch.webp' : '/dark-profile.png'}
+        src={showGlitch ? '/dark-profile-glitch.webp' : '/dark-profile.png'}
         alt='Pixar style avatar of Aaron Myburgh'
         priority={true}
         width={400}
