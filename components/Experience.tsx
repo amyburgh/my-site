@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
   return (
     <section
       id='experience'
-      className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
+      className='mb-8 scroll-mt-16 md:mb-12 lg:mb-16 lg:scroll-mt-24'
     >
       <h3 className='not-prose mb-4 flex whitespace-pre-wrap text-xl font-semibold text-gray-200'>
         <a
