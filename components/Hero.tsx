@@ -2,9 +2,6 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { DownloadIcon } from '@radix-ui/react-icons';
 
-{
-  /* <div className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between'> */
-}
 const Hero = () => {
   return (
     <div className=''>
@@ -18,11 +15,11 @@ const Hero = () => {
         </span>
       </h2>
       <p className='mt-4 max-w-xs leading-normal'>
-        I engineer safe and robust web solutions using the latest technologies.
+        I engineer safe and robust web solutions using the latest technologies
       </p>
       {/* TODO: Add resume */}
       <a href='./Resume_placeholder.pdf' download>
-        <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 hover:bg-gradient-to-l hover:from-violet-500'>
+        <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 transition-colors duration-300 hover:bg-gradient-to-l hover:from-violet-500'>
           <DownloadIcon className='mr-2 h-4 w-4' /> Resume
         </Button>
       </a>

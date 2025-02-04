@@ -11,7 +11,6 @@ const Main: React.FC = () => {
     <main id='content' className=''>
       <About />
       <Experience />
-      {/* <Projects /> */}
       <Contact />
     </main>
   );

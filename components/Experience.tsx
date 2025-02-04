@@ -7,16 +7,16 @@ const data = [
   {
     company: 'Noosa Trust',
     position: 'Commercial Propery Manager',
-    date: 'JAN. 2020 - DEC. 2023',
+    date: 'JAN. 2020 - DEC. 2024',
     description:
       'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
   },
   {
     company: '42 Silicon Valley',
-    position: 'Software Engineer',
-    date: 'JAN. 2019 - DEC. 2019',
+    position: 'Software Engineering Student',
+    date: 'APR. 2018 - SEP. 2019 ',
     description:
-      'Developed and maintained software applications, collaborating with cross-functional teams to identify and address technical issues. Utilized Agile methodologies to deliver high-quality software solutions, contributing to the successful completion of projects.',
+      'Completed an intensive, project-centric coding program focused on real-world software development through collaboration with peers to design, develop, and debug software solutions in a professional-like environment.',
   },
   {
     company: 'NMU Formula Student Racing Team',
