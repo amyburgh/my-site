@@ -1,23 +1,25 @@
-import Hero from '@/components/Hero';
-import Main from '@/components/Main';
 import Nav from '@/components/Nav';
 import ProfileImage from '@/components/ProfileImage';
 import Socials from '@/components/Socials';
+import Hero from '@/components/Hero';
+import Main from '@/components/Main';
+import { DoubleArrowDownIcon } from '@radix-ui/react-icons';
 
 export default function Home() {
   return (
     <>
-      {/* <div className='relative mx-auto flex h-[3000px] min-h-screen max-w-screen-2xl flex-col px-6 py-12 md:flex-row md:px-12 md:py-20 lg:px-24 lg:py-24'> */}
       <div className='relative mx-auto flex min-h-screen max-w-screen-xl px-6'>
         <div className='flex flex-col gap-8 sm:flex-row'>
-          <aside className='min-h-screen py-24 sm:w-2/6 lg:flex lg:min-h-screen lg:flex-col'>
-            <ProfileImage />
-            <div className='mt-8 flex-col justify-between lg:sticky lg:top-24'>
-              <Hero />
-              <Socials />
+          <aside className='min-h-screen py-24 pb-0 sm:w-2/6 sm:pb-24 lg:flex lg:min-h-screen lg:flex-col'>
+            <div className='flex flex-col items-center text-center sm:items-start sm:text-left'>
+              <ProfileImage />
+              <div className='mt-8 flex flex-col items-center text-center sm:items-start sm:text-left lg:sticky lg:top-24'>
+                <Hero />
+                <Socials />
+              </div>
             </div>
           </aside>
-          <div className='w-4/6 pt-24'>
+          <div className='w-full sm:w-4/6 sm:pt-24'>
             <Main />
           </div>
         </div>
@@ -26,6 +28,9 @@ export default function Home() {
             <Nav />
           </div>
         </aside>
+      </div>
+      <div className='fixed bottom-8 left-1/2 -translate-x-1/2 transform sm:hidden'>
+        <DoubleArrowDownIcon className='animate-bounce text-9xl text-gray-500' />
       </div>
     </>
   );

@@ -36,7 +36,11 @@ const ProfileImage: React.FC = () => {
       onMouseLeave={handleMouseLeave}
     >
       <Image
-        src={showGlitch ? '/dark-profile-glitch.webp' : '/dark-profile.png'}
+        src={
+          showGlitch
+            ? '/profile/dark-profile-glitch.webp'
+            : '/profile/dark-profile.png'
+        }
         alt='Pixar style avatar of Aaron Myburgh'
         priority={true}
         width={400}

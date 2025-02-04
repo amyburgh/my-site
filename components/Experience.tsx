@@ -1,12 +1,11 @@
 'use client';
 import React from 'react';
 import { Link2Icon } from '@radix-ui/react-icons';
-import { Separator } from '@/components/ui/seperator';
 
 const data = [
   {
     company: 'Noosa Trust',
-    position: 'Commercial Propery Manager',
+    position: 'Commercial Property Manager',
     date: 'JAN. 2020 - DEC. 2024',
     description:
       'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
@@ -14,7 +13,7 @@ const data = [
   {
     company: '42 Silicon Valley',
     position: 'Software Engineering Student',
-    date: 'APR. 2018 - SEP. 2019 ',
+    date: 'APR. 2018 - SEP. 2019',
     description:
       'Completed an intensive, project-centric coding program focused on real-world software development through collaboration with peers to design, develop, and debug software solutions in a professional-like environment.',
   },
@@ -23,7 +22,7 @@ const data = [
     position: 'Mechanical Design Engineer',
     date: 'JUN. 2013 - NOV. 2014',
     description:
-      'Designed and implemented composite components that achieved a weight reduction of up to 30% through the integration of varied tread orientations and the layering of carbon fiber, enhanced by vacuum pressure curing. Delivered training to onboard new teammembers.',
+      'Designed and implemented composite components that achieved a weight reduction of up to 30% through the integration of varied tread orientations and the layering of carbon fiber, enhanced by vacuum pressure curing. Delivered training to onboard new team members.',
   },
 ];
 
@@ -32,7 +31,6 @@ const Experience: React.FC = () => {
     <section
       id='experience'
       className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
-      aria-label='experience'
     >
       <h3 className='not-prose mb-4 flex whitespace-pre-wrap text-xl font-semibold text-gray-200'>
         <a
@@ -47,26 +45,24 @@ const Experience: React.FC = () => {
           Experience
         </a>
       </h3>
-      <p className='mb-4'>
+      <div className='mb-4'>
         {data.map((job) => (
           <div
-            className='mb-4 flex flex-col gap-4 lg:flex-row'
+            className='mb-4 grid grid-cols-1 lg:grid-cols-4 lg:gap-4'
             key={job.company}
           >
-            <div>
-              <p className='z-10 mb-2 mt-1 w-max text-xs font-semibold uppercase tracking-wide text-gray-500 sm:col-span-2'>
-                {job.date}
-              </p>
-            </div>
-            <div>
-              <h4 className='text-lg font-semibold text-gray-200'>
-                {job.position} @ {job.company}
-              </h4>
-              <p className='text-sm text-gray-400'>{job.description}</p>
-            </div>
+            <p className='order-2 mb-2 mt-2 w-auto text-xs font-semibold uppercase tracking-wide text-gray-500 lg:order-1 lg:col-span-1 lg:row-span-2'>
+              {job.date}
+            </p>
+            <h4 className='order-1 text-lg font-semibold text-gray-200 lg:order-2 lg:col-span-3'>
+              {job.position} @ {job.company}
+            </h4>
+            <p className='order-3 mt-2 text-sm text-gray-400 lg:col-span-3 lg:mt-0'>
+              {job.description}
+            </p>
           </div>
         ))}
-      </p>
+      </div>
     </section>
   );
 };

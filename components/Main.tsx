@@ -4,8 +4,6 @@ import Experience from './Experience';
 // import Projects from './Projects';
 import Contact from './Contact';
 
-// import { scroll } from 'framer-motion';
-
 const Main: React.FC = () => {
   return (
     <main id='content' className=''>

@@ -4,7 +4,7 @@ import { DownloadIcon } from '@radix-ui/react-icons';
 
 const Hero = () => {
   return (
-    <div className=''>
+    <div className='flex flex-col items-center text-center sm:items-start sm:text-left'>
       <h1 className='text-4xl font-bold text-gray-950 dark:text-gray-200 sm:text-5xl'>
         <a href='/'>Aaron Myburgh</a>
       </h1>
@@ -17,9 +17,8 @@ const Hero = () => {
       <p className='mt-4 max-w-xs leading-normal'>
         I engineer safe and robust web solutions using the latest technologies
       </p>
-      {/* TODO: Add resume */}
-      <a href='./Resume_placeholder.pdf' download>
-        <Button className='my-4 w-fit bg-sky-500 px-6 text-gray-200 transition-colors duration-300 hover:bg-gradient-to-l hover:from-violet-500'>
+      <a href='./Aaron_Myburgh.pdf' download>
+        <Button className='my-8 w-fit bg-sky-500 px-6 text-gray-200 transition-colors duration-300 hover:bg-gradient-to-l hover:from-violet-500'>
           <DownloadIcon className='mr-2 h-4 w-4' /> Resume
         </Button>
       </a>

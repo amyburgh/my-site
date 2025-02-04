@@ -1,4 +1,3 @@
-import { delay } from 'framer-motion';
 import React from 'react';
 
 const Mindset = () => {
