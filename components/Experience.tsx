@@ -4,7 +4,7 @@ import { Link2Icon } from '@radix-ui/react-icons';
 
 const data = [
   {
-    company: 'Noosa Trust',
+    company: 'Private Portfolio',
     position: 'Commercial Property Manager',
     date: 'JAN. 2020 - DEC. 2024',
     description:

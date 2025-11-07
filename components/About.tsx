@@ -1,5 +1,4 @@
 import React from 'react';
-import Personality from './Personality';
 import { Link2Icon } from '@radix-ui/react-icons';
 
 const About: React.FC = () => {
@@ -24,17 +23,16 @@ const About: React.FC = () => {
       </h3>
 
       <p className='mb-4'>
-        Hey, I&apos;m Aaron an adaptable{' '}
-        <span className='font-medium text-gray-200'>Software Engineer </span>
-        that studied Mechanical Engineering in South Africa. My skillset blends
-        technical expertise with an understanding of physical systems, resulting
-        in an unique approach to problem-solving.
+        Hi, I'm Aaron a{' '}
+        <span className='font-medium text-gray-200'>Software Engineer </span>{' '}
+        with a background in Mechanical Engineering. I studied in South Africa
+        and later in Silicon Valley, where I shifted my focus to software. My
+        experience bridges physical systems and software, giving me a practical
+        perspective to problem-solving.
       </p>
       <p>
-        Beyond coding, I spend my time with family, reading historical fiction
-        and biographies, and challenging myself through some sort of outdoor
-        activity. I believe a well-rounded <Personality /> fosters creativity
-        and ultimately contributes to more impactful work.
+        Away from the screen, you’ll find me with family, reading biographies,
+        or outside touching grass.
       </p>
     </section>
   );

@@ -9,7 +9,6 @@ const Hero = () => {
         <a href='/'>Aaron Myburgh</a>
       </h1>
       <h2 className='mt-3 text-lg font-bold [text-wrap:balance]'>
-        I`m a{' '}
         <span className='inline-block bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent'>
           Software Engineer
         </span>

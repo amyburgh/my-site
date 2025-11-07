@@ -20,25 +20,6 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 - **Animations:** Custom animations with Tailwind
 - **Deployment:** Vercel
 
-## 🏃‍♂️ Running Locally
-
-1. Clone the repository
-```bash
-git clone https://github.com/amyburgh/portfolio.git
-```
-
-2. Install dependencies
-```bash
-npm install
-```
-
-3. Start the development server
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
 ## 📁 Project Structure
 
 ```
@@ -57,6 +38,7 @@ This project is licensed under the MIT License.
 ## 👤 Author
 
 **Aaron Myburgh**
+
 - Website: [aaronmyburgh.com](https://aaronmyburgh.com)
 - GitHub: [@amyburgh](https://github.com/amyburgh)
 
