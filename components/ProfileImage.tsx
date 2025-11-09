@@ -31,7 +31,7 @@ const ProfileImage: React.FC = () => {
 
   return (
     <div
-      className='transform transition duration-500 ease-in-out'
+      className='group transform transition duration-500 ease-in-out'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -45,7 +45,7 @@ const ProfileImage: React.FC = () => {
         priority={true}
         width={400}
         height={400}
-        className='rounded-full'
+        className='rounded-full border-2 border-slate-200/10 transition group-hover:border-slate-200/30'
       />
     </div>
   );
