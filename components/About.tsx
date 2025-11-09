@@ -18,7 +18,7 @@ const About: React.FC = () => {
               <Link2Icon />
             </div>
           </div>
-          About me
+          About
         </a>
       </h3>
 
@@ -27,8 +27,8 @@ const About: React.FC = () => {
         <span className='font-medium text-gray-200'>Software Engineer </span>{' '}
         with a background in Mechanical Engineering. I studied in South Africa
         and later in Silicon Valley, where I shifted my focus to software. My
-        experience bridges physical systems and software, giving me a practical
-        perspective to problem-solving.
+        experience spans mechanical systems, property operations, and software
+        engineering, giving me a practical perspective to problem-solving.
       </p>
       <p>
         Away from the screen, you’ll find me with family, reading biographies,

@@ -21,7 +21,7 @@ const Contact = () => {
               <Link2Icon />
             </div>
           </div>
-          Contact me
+          Contact
         </a>
       </h3>
       <a
@@ -35,8 +35,8 @@ const Contact = () => {
           <ChatBubbleIcon className='h-4 w-4' />
           <AlertTitle>Get in touch!</AlertTitle>
           <AlertDescription>
-            I&apos;m currently looking for a new opportunity, feel free to reach
-            out on LinkedIn.
+            I&apos;m currently looking for a new opportunity, feel free to say
+            hi on LinkedIn.
           </AlertDescription>
         </Alert>
       </a>

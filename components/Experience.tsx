@@ -4,25 +4,39 @@ import { Link2Icon } from '@radix-ui/react-icons';
 
 const data = [
   {
-    company: 'Private Portfolio',
-    position: 'Commercial Property Manager',
-    date: 'JAN. 2020 - DEC. 2024',
+    company: 'NMU Formula Student Racing Team',
+    position: 'Mechanical Design Engineer',
+    date: 'JUN 2013 - NOV 2014',
     description:
-      'Managed operations of commercial properties, overseeing leasing activities, and ensuring tenant satisfaction. Implemented cost-effective property improvements, successfully handled tenant concerns, fostering positive relationships and optimizing property performance.',
+      'I started by designing and building race car components as part of NMU’s Formula Student team, an experience that taught me how precision and collaboration matter when missing a deadline means missing the start line.',
   },
   {
     company: '42 Silicon Valley',
     position: 'Software Engineering Student',
-    date: 'APR. 2018 - SEP. 2019',
+    date: 'APR 2018 - SEP 2019',
     description:
-      'Completed an intensive, project-centric coding program focused on real-world software development through collaboration with peers to design, develop, and debug software solutions in a professional-like environment.',
+      'A few years later, I moved to Silicon Valley for 42, an intensive software engineering program built entirely around problem-solving and collaboration. No lectures, no grades, just code, iteration, and some serious persistence.',
   },
   {
-    company: 'NMU Formula Student Racing Team',
-    position: 'Mechanical Design Engineer',
-    date: 'JUN. 2013 - NOV. 2014',
+    company: 'Private Portfolio',
+    position: 'Commercial Property Manager',
+    date: 'JAN 2020 - DEC 2024',
     description:
-      'Designed and implemented composite components that achieved a weight reduction of up to 30% through the integration of varied tread orientations and the layering of carbon fiber, enhanced by vacuum pressure curing. Delivered training to onboard new team members.',
+      'From 2020 to 2024, I managed commercial properties, handling operations, compliance, and property upgrades. It was a crash course in real-world ownership and decision-making.',
+  },
+  {
+    company: 'Outlier.ai (Contract)',
+    position: 'Software Engineer',
+    date: 'JUN 2025 - AUG 2025',
+    description:
+      'Most recently, I evaluated AI-generated codebases for research teams. Now I’m back on the building side, ready and focused on shipping software that solves real problems.',
+  },
+  {
+    company: '',
+    position: 'Software Engineer',
+    date: 'NEXT',
+    description:
+      'I’m looking for a team that values a non-traditional path. A decade across different fields means I see problems from angles others might miss. If that resonates, drop me a line on LinkedIn.',
   },
 ];
 

@@ -14,13 +14,15 @@ const Hero = () => {
         </span>
       </h2>
       <p className='mt-4 max-w-xs leading-normal'>
-        I engineer safe and robust web solutions using the latest technologies
+        I build web applications that solve real problems
       </p>
-      <a href='./Aaron_Myburgh.pdf' download>
-        <Button className='my-8 w-fit bg-sky-500 px-6 text-gray-200 transition-colors duration-300 hover:bg-gradient-to-l hover:from-violet-500'>
-          <DownloadIcon className='mr-2 h-4 w-4' /> Resume
-        </Button>
-      </a>
+      <div className='flex w-full justify-center sm:justify-start'>
+        <a href='./Aaron_Myburgh_redacted.pdf' download>
+          <Button className='my-8 w-fit bg-sky-500 px-6 text-gray-200 transition-colors duration-300 hover:bg-gradient-to-l hover:from-violet-500'>
+            <DownloadIcon className='mr-2 h-4 w-4' /> Resume
+          </Button>
+        </a>
+      </div>
     </div>
   );
 };

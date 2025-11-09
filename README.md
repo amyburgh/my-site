@@ -35,13 +35,6 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 
 This project is licensed under the MIT License.
 
-## 👤 Author
-
-**Aaron Myburgh**
-
-- Website: [aaronmyburgh.com](https://aaronmyburgh.com)
-- GitHub: [@amyburgh](https://github.com/amyburgh)
-
 ## 🙏 Acknowledgments
 
 - [Next.js Documentation](https://nextjs.org/docs)

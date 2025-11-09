@@ -17,7 +17,7 @@ const XLogo: React.FC<{ className?: string }> = ({ className }) => (
 const Socials: React.FC = () => {
   return (
     <div className=''>
-      <ul className='ml-1 mt-8 flex items-center' aria-label='Social media'>
+      <ul className='ml-1 mt-1 flex items-center' aria-label='Social media'>
         <SocialLink
           href='https://github.com/amyburgh'
           ariaLabel='GitHub (opens in a new tab)'
