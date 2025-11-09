@@ -5,6 +5,7 @@ import { ThemeProvider } from '../components/theme-provider';
 import Spotlight from '@/components/Spotlight';
 import Head from 'next/head';
 import { Toaster } from '@/components/ui/toaster';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} overflow-x-hidden overflow-y-scroll leading-relaxed antialiased`}
       >
+        <Analytics />
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
