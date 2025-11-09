@@ -3,10 +3,16 @@ import React from 'react';
 import Link from 'next/link';
 // import { motion } from 'framer-motion';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const useHash = () => {
   const [hash, setHash] = useState('');
+  const hashRef = useRef(hash);
+
+  // Keep ref in sync with state
+  useEffect(() => {
+    hashRef.current = hash;
+  }, [hash]);
 
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
@@ -35,7 +41,7 @@ const useHash = () => {
       // Always prioritize URL hash if it exists
       if (window.location.hash) {
         const urlHash = window.location.hash.replace('#', '');
-        if (urlHash !== hash) {
+        if (urlHash !== hashRef.current) {
           setHash(urlHash);
         }
         return;
@@ -63,7 +69,7 @@ const useHash = () => {
         }
 
         // Only update if we found a section
-        if (activeSection && activeSection !== hash) {
+        if (activeSection && activeSection !== hashRef.current) {
           setHash(activeSection);
         }
       }, 150);

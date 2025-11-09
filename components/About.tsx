@@ -23,7 +23,7 @@ const About: React.FC = () => {
       </h3>
 
       <p className='mb-4'>
-        Hi, I'm Aaron a{' '}
+        Hi, I&apos;m Aaron a{' '}
         <span className='font-medium text-gray-200'>Software Engineer </span>{' '}
         with a background in Mechanical Engineering. I studied in South Africa
         and later in Silicon Valley, where I shifted my focus to software. My
