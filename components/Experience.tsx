@@ -62,7 +62,7 @@ const Experience: React.FC = () => {
       <div className='mb-4'>
         {data.map((job) => (
           <div
-            className='mb-4 grid grid-cols-1 lg:grid-cols-4 lg:gap-4'
+            className='mb-4 grid grid-cols-1 lg:grid-cols-4 lg:gap-1'
             key={job.company}
           >
             <p className='order-2 mb-2 mt-2 w-auto text-xs font-semibold uppercase tracking-wide text-gray-500 lg:order-1 lg:col-span-1 lg:row-span-2'>
@@ -71,7 +71,7 @@ const Experience: React.FC = () => {
             <h4 className='order-1 text-lg font-semibold text-gray-200 lg:order-2 lg:col-span-3'>
               {job.position} @ {job.company}
             </h4>
-            <p className='order-3 mt-2 text-sm text-gray-400 lg:col-span-3 lg:mt-0'>
+            <p className='order-3 mt-0 text-sm text-gray-400 lg:col-span-3 lg:mt-0'>
               {job.description}
             </p>
           </div>
